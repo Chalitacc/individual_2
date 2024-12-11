@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+body{
+    height: 100%;
+    min-width: 100%;
+}
+
+
+header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    background-color: #102c57;
+    padding-top: var(--spacing-medium);
+    padding-left: var(--spacing-small);
+    margin-bottom: var(--spacing-small); 
+}
+
+.title__container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-bottom: var(--spacing-small);
+    font-family: Lato;
+}
+
+.title__logo{
+    width: 50px;
+    height: 50px;
+}
+.title__header{
+    display: flex;
+    color: var(--text-color);
+}
+
+.title__link{
+    display: flex;
+    color: var(--text-color);
+    padding-right: var(--spacing-small);
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--font--small);
+    font-family: Lato;
+}
+.container__header{
+    text-align: center;
+    width: 50%;
+    border: 5px solid var(--secondary-color); 
+    color: black;
+}
+
+/* TRENER */
+
+.trainer__container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px,1fr));
+    gap: var(--font-medium);
+}
+
+.trainer__1{
+    grid-row: 2/3;
+    grid-column:1/2;
+    border: 6px solid navy;
+}
+
+.trainer__2{
+    grid-row:1/2;
+    grid-column: 2/3  ;
+    border: 6px solid navy;
+
+}
+
+.trainer__3{
+    grid-column: 3/4;
+    grid-row:2/3;
+    border: 6px solid navy;
+
+}
+
+
+/*eventuelt fjerne width og height eller ta min height eller max*/
+.member__image--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+.member__image{
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.member__info{
+    padding-bottom: var(--spacing-small);
+    padding-left: 0.5rem;
+    color: var(--text-color);
+    
+}
+
+.member__info--container{
+    height: 50%;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-top: var(--spacing-small);
+    
+}
+
+
+
+/* KEEPER */
+.goalies__container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: var(--font-medium);
+}
+
+.goalies__1{
+    border: 4px solid navy;
+   
+}
+
+.goalies__2{
+    border: 4px solid navy;
+    
+}
+
+.goalies__3{
+    border: 4px solid navy;
+}
+
+/* BAKSPILLERE */
+
+.backplayer__container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px,1fr));
+    gap: var(--font-medium);
+}
+
+.backplayer__1{
+    border: 4px solid navy;
+    }
+
+.backplayer__2{
+    border: 4px solid navy;
+
+}
+.backplayer__3{
+    border: 4px solid navy;
+    }
+.backplayer__4{
+    border: 4px solid navy;
+    }
+.backplayer__5{
+    border: 4px solid navy;
+   
+}
+.backplayer__6{
+    border: 4px solid navy;
+    
+}
+
+/* WINGPLAYERS */
+
+.wingplayers__container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: var(--font-medium);
+}
+
+.wingplayers__1{
+       border: 4px solid navy;
+    
+}
+.wingplayers__2{
+   border: 4px solid navy;
+    
+}
+.wingplayers__3{
+   border: 4px solid navy;
+    
+}
+.wingplayers__4{
+   border: 4px solid navy;
+    
+}
+
+.lineplayer__container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: var(--font-medium);
+}
+
+.lineplayer__1{
+    border: 4px solid navy;
+}
+.lineplayer__2{
+    border: 4px solid navy;
+}
+.lineplayer__3{
+    border: 4px solid navy;
+}
+
+
+@media screen and (max-width:820px){
+    .trainer__container{
+        gap: 0.1rem;
+
+    }
+
+    .goalies__container{
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .backplayer__container{
+        grid-template-columns: repeat(2,minmax(150px, 1fr));
+        grid-template-rows: repeat(3, minmax(150px, 1fr));
+    }
+
+    .wingplayers__container{
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .lineplayer__container{
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .trainer__container{
+        gap: 0.1rem;
+    }
+
+    .goalies__container{
+        gap: 0.1rem;
+    }
+}
+@media screen and (max-width: 600px) { 
+  .trainer__container{
+    display: flex;
+    flex-direction: column;
+  }
+    
+}
+
+

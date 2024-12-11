@@ -1,0 +1,19 @@
+:root{
+    --spacing-xsmall: 0.5rem;
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+    --spacing--large: 3rem;
+    --spacing-xlarge: 4rem;
+
+    --font--small: 16px;
+    --font-medium: 20px;
+    --font-large: 30px;
+    --font-xlarge: 40px;
+
+
+    --primary-color: #102c57;
+    --secondary-color: navy;
+    --text-color: white; 
+
+    
+}
