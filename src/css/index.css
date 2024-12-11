@@ -93,7 +93,7 @@ main{
 }
 
 
-/*eventuelt fjerne width og height eller ta min height eller max*/
+
 .member__image--container{
     display: flex;
     justify-content: center;
